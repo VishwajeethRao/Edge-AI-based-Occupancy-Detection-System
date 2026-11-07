@@ -1,0 +1,12 @@
+onnxruntime>=1.17.0
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Only needed once, to EXPORT the pretrained Re-ID model to ONNX
+# (see README "Model setup" -- not imported by any app code, so you
+# can uninstall it again after exporting models/reid_model.onnx).
+# boxmot>=10.0.0
+
+# Only needed once, to EXPORT the YOLOv8n model to ONNX (see README
+# "Model setup"). Same story -- not imported by the app itself.
+# ultralytics>=8.1.0
