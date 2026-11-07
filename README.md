@@ -20,6 +20,12 @@ It maintains two separate counts:
 - **Current People:** Number of people visible in the current frame.
 - **Unique People:** Number of distinct individuals detected during the session.
 
+## Application Demo
+
+The system performs real-time person detection, tracking, and unique person counting using YOLOv8 and Re-ID.
+
+![EdgeVision-Lite Person Counting](screenshots/occupancy-detection.png)
+
 ## Key Features
 
 - Real-time person detection using YOLOv8n.
@@ -232,6 +238,12 @@ python benchmark.py --fp32 yolov8n.onnx --int8 yolov8n_int8.onnx --reid models\o
 Use `python benchmarking.py --help` if your script is named `benchmarking.py`.
 
 Actual performance depends on the CPU, input resolution, camera, and workload.
+
+### Benchmark Results
+
+The following results show the measured inference latency and tracking performance over 256 processed frames.
+
+![EdgeVision-Lite Benchmark Results](screenshots/benchmark-results.png)
 
 ## Identity Recognition
 
